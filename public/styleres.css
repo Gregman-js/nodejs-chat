@@ -1,0 +1,263 @@
+@media (min-width: 800px)
+{
+body
+{
+	/*Background pattern from subtlepatterns.com */
+	background-image: url("hexellence.png");
+	font-size: 20px;
+}
+
+#container
+{
+	background-color: white;
+	width: 300px;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	-webkit-box-shadow: 7px 7px 28px 5px rgba(0,0,0,0.61);
+	-moz-box-shadow: 7px 7px 28px 5px rgba(0,0,0,0.61);
+	box-shadow: 7px 7px 28px 5px rgba(0,0,0,0.61);
+	border-radius: 7px;
+}
+
+#login,
+#pasy,
+#pasyad
+{
+	width: 300px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+}
+
+#login:focus,
+#pasy:focus,
+#pasyad:focus
+{
+	-webkit-box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.61);
+	-moz-box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.61);
+	box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.61);
+	border: 2px solid #a5cda5;
+	background-color:#e9f3e9;
+	color: #428c42;
+}
+input[type=submit]
+{
+	width: 300px;
+	background-color: #36b03c;
+	font-size: 20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.61);
+	-moz-box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.61);
+	box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.61);
+}
+
+input[type=submit]:hover
+{
+	background-color: #37b93d;
+}
+
+/*ZWYKŁE*//*typ focus niepotrzebny bo placeholder znika po kliknięciu*/
+input::-webkit-input-placeholder
+{
+	color: #999;
+}
+
+
+input:focus::-webkit-input-placeholder
+{
+	color: #428c42;
+}
+
+/*MOZILLA*/
+input:-moz-placeholder
+{
+	color: #999;
+}
+
+
+input:focus:-moz-placeholder
+{
+	color: #428c42;
+}
+
+/*MOZILLA*/
+input::-moz-placeholder
+{
+	color: #999;
+}
+
+
+input:focus::-moz-placeholder
+{
+	color: #428c42;
+}
+
+/*EXPLORER*/
+input:-ms-input-placeholder
+{
+	color: #999;
+}
+
+
+input:-ms-input-placeholder
+{
+	color: #428c42;
+}
+}
+@media (max-width: 800px)
+{
+body
+{
+	/*Background pattern from subtlepatterns.com */
+	background-image: url("hexellence.png");
+	font-size: 20px;
+}
+
+#container
+{
+	background-color: white;
+	width: 100%;
+	min-height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	-webkit-box-shadow: 7px 7px 28px 5px rgba(0,0,0,0.61);
+	-moz-box-shadow: 7px 7px 28px 5px rgba(0,0,0,0.61);
+	box-shadow: 7px 7px 28px 5px rgba(0,0,0,0.61);
+	border-radius: 7px;
+}
+
+#login,
+#pasy,
+#pasyad
+{
+	width: 80%;
+	margin-left: 10%;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 20px;
+}
+
+#login:focus,
+#pasy:focus,
+#pasyad:focus
+{
+	-webkit-box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.61);
+	-moz-box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.61);
+	box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.61);
+	border: 2px solid #a5cda5;
+	background-color:#e9f3e9;
+	color: #428c42;
+}
+#popraw
+{
+	width: 70%;
+	margin-left: 10%;
+	margin-top: 10px;
+	padding: 5%;
+}
+input[type=submit]
+{
+	width: 80%;
+	margin-left: 10%;
+	background-color: #36b03c;
+	font-size: 20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.61);
+	-moz-box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.61);
+	box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.61);
+}
+
+input[type=submit]:hover
+{
+	background-color: #37b93d;
+}
+
+/*ZWYKŁE*//*typ focus niepotrzebny bo placeholder znika po kliknięciu*/
+input::-webkit-input-placeholder
+{
+	color: #999;
+}
+
+
+input:focus::-webkit-input-placeholder
+{
+	color: #428c42;
+}
+
+/*MOZILLA*/
+input:-moz-placeholder
+{
+	color: #999;
+}
+
+
+input:focus:-moz-placeholder
+{
+	color: #428c42;
+}
+
+/*MOZILLA*/
+input::-moz-placeholder
+{
+	color: #999;
+}
+
+
+input:focus::-moz-placeholder
+{
+	color: #428c42;
+}
+
+/*EXPLORER*/
+input:-ms-input-placeholder
+{
+	color: #999;
+}
+
+
+input:-ms-input-placeholder
+{
+	color: #428c42;
+}
+}
+
+
+
+

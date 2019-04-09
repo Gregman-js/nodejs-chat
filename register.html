@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Chat-rejestracja</title>
+<meta charset="utf-8" />
+<meta name="language" content="pl" />
+<meta name="author" content="Grzegorz Libiszewski" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link rel="stylesheet" href="styleres.css" type="text/css" />
+<script type="text/javascript" src="scriptres.js"></script>
+<script type="text/javascript" src="node_modules/socket.io-client/dist/socket.io.js"></script>
+</head>
+<body>
+	
+		<div id="container">
+			
+				
+				<input type="text" id="login" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'" maxlength="20">
+				
+				
+				
+				<input type="password" id="pasy" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'">
+				
+				
+				
+				<input type="password" id="pasyad" placeholder="hasło-admina" onfocus="this.placeholder=''" onblur="this.placeholder='hasło-admina'">
+				
+				
+				
+				<input type="submit" value="Zarejestruj się :)" onclick="send()">
+				<div id="popraw"></div>
+		
+		</div>
+
+</body>
+</html>

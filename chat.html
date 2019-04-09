@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Chat</title>
+<meta charset="utf-8" />
+<meta name="language" content="pl" />
+<meta name="author" content="Grzegorz Libiszewski" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link rel="stylesheet" href="stylechat.css" type="text/css" />
+<script type="text/javascript" src="scriptchat.js"></script>
+<script type="text/javascript" src="node_modules/socket.io-client/dist/socket.io.js"></script>
+</head>
+<body>
+<div id="top-bar">
+	<div id="menu">
+		<div class="menu-bar" id="numer1"></div>
+		<div class="menu-bar" id="numer2"></div>
+		<div class="menu-bar" id="numer3"></div>
+	</div>
+	<div id="ster">
+		<ul id="gracze"></ul>
+	</div>
+	<div id="logo">
+		<img id="zdj" src="android.png" alt="...">
+		<div id="logo-text">Chat-online!!</div>
+		<div style="clear: both"></div>
+	</div>
+	<div id="wyloguj" onclick="logout()">
+		<div id="back"><b>Wyloguj się</b></div>
+	</div>
+</div>
+
+<div id="ponad">
+	<div id="wiadomosc">
+		<div class="inner-mes">
+			<div class="mes-top-bar">
+					<img src="android.png" alt="...">
+					<div class="chat-name">Wszyscy</div>
+			</div>
+			<ul id="every" class="wiadomosc-gracz"></ul>
+			<div class="input-area">
+				<input id="inevery" type="text" class="write-input" placeholder="Wiadomość:" onfocus="this.placeholder='';" onblur="this.placeholder='Wiadomość:';" onKeyPress="return checkSubmit(event, this)" />
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
