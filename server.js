@@ -99,6 +99,10 @@ console.log("Połączenie: %s user", connections.length);
 	socket.on("login", function(data){
 		var log = data[0];
 		var has = data[1];
+		if(!fs.existsSync("user.txt"))
+		{
+			io.sockets.emit("getin", "no");
+		} else {
 		fs.readFile("user.txt", "utf-8", (err, data) => {
 				if(err) throw err;
 				if((data.indexOf(log+"_")!="-1") & (data.indexOf("_"+has)!="-1")){
@@ -109,6 +113,7 @@ console.log("Połączenie: %s user", connections.length);
 			io.sockets.emit("getin", "no");
 		}
 			});
+		}
 	});
 	socket.on("user", function(data){
 		socket.username = data;
