@@ -9,8 +9,8 @@
   },
   "author": "GRzegorz Libiszewski",
   "license": "ISC",
-  "dependencies" :{
-  "socket.io" : "*",
-  "express" : "*"
+  "dependencies": {
+    "socket.io": "*",
+    "express": "*"
   }
 }
