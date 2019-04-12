@@ -30,7 +30,7 @@ app.use(express.static("public"));
 io.on("connection", function(socket){
 connections.push(socket);
 console.log("Połączenie: %s user", connections.length);
-	
+
 	socket.on("disconnect", function(data){
 		if(!socket.username) return;
 		users.splice(users.indexOf(socket.username), 1);
@@ -53,8 +53,6 @@ console.log("Połączenie: %s user", connections.length);
 				});
 	}
 	socket.on("register", function(data){
-		if(data[2] == "pomaranczki")
-		{
 			pamiec = data[0] + "_" + data[1];
 			var login = data[0];
 			if(fs.existsSync("user.txt"))
@@ -97,11 +95,6 @@ console.log("Połączenie: %s user", connections.length);
 					io.sockets.emit("gotowe", ":)");
 				});
 			}
-		}
-		else
-		{
-			io.sockets.emit("zlehas", ":)");
-		}
 	});
 	socket.on("login", function(data){
 		var log = data[0];
@@ -131,14 +124,14 @@ console.log("Połączenie: %s user", connections.length);
 	socket.on("send message", function(data){
 		io.sockets.emit("new message", {msg: data, user: socket.username});
 	});
-	
+
 	socket.on("new user", function(data, callback){
 		callback(true);
 		socket.username = data;
 		users.push(socket.username);
 		updateUsernames();
 	});
-	
+
 	function updateUsernames(){
 		io.sockets.emit("get users", users);
 	}

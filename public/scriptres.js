@@ -6,8 +6,7 @@ function send(){
 	socket = io.connect();
 	login = document.getElementById("login").value;
 	haslo = document.getElementById("pasy").value;
-	hasload = document.getElementById("pasyad").value;
-	socket.emit("register", [login, haslo, hasload]);
+	socket.emit("register", [login, haslo]);
 	socket.on("zlehas", function(data){
 		document.getElementById("popraw").innerHTML = "Hasło administratora jest niepoprawne";
 	});
